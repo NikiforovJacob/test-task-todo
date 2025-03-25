@@ -1,0 +1,15 @@
+:root {
+  /* Colors */
+  --color-primary: rgba(175, 47, 47, 0.15);
+  --color-primary-hover: rgba(175, 47, 47, 0.2);
+  --color-text: #4d4d4d;
+  --color-text-light: #777;
+  --color-border: #ededed;
+  --color-background: #fff;
+  --color-completed: #d9d9d9;
+  --color-shadow: rgba(0, 0, 0, 0.03);
+  --color-button-hover: rgba(175, 47, 47, 0.1);
+  --color-button-active: rgba(175, 47, 47, 0.2);
+  --color-checkbox: #5dc2af;
+  --color-checkbox-border: #ededed;
+} 
