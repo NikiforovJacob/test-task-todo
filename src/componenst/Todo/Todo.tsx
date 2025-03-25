@@ -1,4 +1,4 @@
-import { useState, useEffect, useId } from 'react';
+import { useState, useEffect } from 'react';
 import { Todo, TodoFilter } from '../../types/todo';
 import { TodoInput } from '../TodoInput';
 import { TodoList } from '../TodoList';
@@ -9,7 +9,6 @@ import { getFromStorage, setToStorage } from '../../utils/localStorage';
 const STORAGE_KEY = 'todos-react-ts';
 
 export function TodoApp() {
-  const idPrefix = useId();
   const [todos, setTodos] = useState<Todo[]>(getFromStorage(STORAGE_KEY) ?? []);
   const [newTodo, setNewTodo] = useState('');
   const [filter, setFilter] = useState<TodoFilter>('all');
@@ -25,7 +24,7 @@ export function TodoApp() {
     setTodos([
       ...todos,
       {
-        id: `${idPrefix}-${todos.length}`,
+        id: new Date().getTime().toString(),
         text: newTodo.trim(),
         completed: false,
       },

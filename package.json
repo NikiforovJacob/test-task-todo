@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "author": "Nikiforov Yakov",
+  "homepage": "http://NikiforovJacob.github.io/test-task-todo",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -34,6 +38,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
