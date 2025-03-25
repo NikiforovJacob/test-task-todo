@@ -6,7 +6,7 @@
   "author": "Nikiforov Yakov",
   "homepage": "http://NikiforovJacob.github.io/test-task-todo",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "test": "jest",
     "test:watch": "jest --watch",
