@@ -1,6 +1,6 @@
-import { Todo } from '../../types/todo';
-import { TodoItem } from '../TodoItem';
-import styles from './TodoList.module.css';
+import { Todo } from "../../types/todo";
+import { TodoItem } from "../TodoItem";
+import styles from "./TodoList.module.css";
 
 interface TodoListProps {
   todos: Todo[];
@@ -15,4 +15,4 @@ export function TodoList({ todos, onToggle }: TodoListProps) {
       ))}
     </div>
   );
-} 
+}

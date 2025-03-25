@@ -4,4 +4,4 @@ export interface Todo {
   completed: boolean;
 }
 
-export type TodoFilter = 'all' | 'active' | 'completed'; 
+export type TodoFilter = "all" | "active" | "completed";

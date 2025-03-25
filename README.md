@@ -2,10 +2,6 @@
 
 A simple Todo application built with React, TypeScript, and Vite. This application allows users to manage their tasks with features like adding, completing, and filtering todos.
 
-
-
-
-
 ## Getting Started
 
 ### Prerequisites
@@ -16,11 +12,13 @@ A simple Todo application built with React, TypeScript, and Vite. This applicati
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone [repository-url]
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -28,6 +26,7 @@ yarn install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 # or
@@ -43,4 +42,3 @@ yarn dev
 - `npm run preview` - Preview production build
 - `npm run test` - Run tests
 - `npm run lint` - Run ESLint
-

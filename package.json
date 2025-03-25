@@ -1,10 +1,9 @@
 {
   "name": "test-tasks",
-  "private": true,
   "version": "0.1.0",
   "type": "module",
   "author": "Nikiforov Yakov",
-  "homepage": "http://NikiforovJacob.github.io/test-task-todo",
+  "homepage": "https://NikiforovJacob.github.io/test-task-todo",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",

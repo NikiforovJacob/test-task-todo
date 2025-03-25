@@ -1,12 +1,12 @@
 :root {
   /* Colors */
   --color-primary: rgba(175, 47, 47, 0.15);
-  --color-text:rgb(77, 77, 77);
-  --color-text-light:rgb(119, 119, 119);
-  --color-border:rgb(237, 237, 237);
-  --color-background:rgb(255, 255, 255);
-  --color-completed:rgb(217, 217, 217);
+  --color-text: rgb(77, 77, 77);
+  --color-text-light: rgb(119, 119, 119);
+  --color-border: rgb(237, 237, 237);
+  --color-background: rgb(255, 255, 255);
+  --color-completed: rgb(217, 217, 217);
   --color-button-border: rgba(175, 47, 47, 0.1);
-  --color-checkbox:rgb(93, 194, 175);
-  --color-checkbox-border:rgb(189, 219, 215);
-} 
+  --color-checkbox: rgb(93, 194, 175);
+  --color-checkbox-border: rgb(189, 219, 215);
+}

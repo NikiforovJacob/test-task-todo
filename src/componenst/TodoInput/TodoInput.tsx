@@ -1,4 +1,4 @@
-import styles from './TodoInput.module.css';
+import styles from "./TodoInput.module.css";
 
 interface TodoInputProps {
   value: string;
@@ -8,8 +8,8 @@ interface TodoInputProps {
 
 export function TodoInput({ value, onChange, onSubmit }: TodoInputProps) {
   return (
-    <form 
-      className={styles.todoInputForm} 
+    <form
+      className={styles.todoInputForm}
       onSubmit={onSubmit}
       data-testid="todo-form"
     >
@@ -22,4 +22,4 @@ export function TodoInput({ value, onChange, onSubmit }: TodoInputProps) {
       />
     </form>
   );
-} 
+}

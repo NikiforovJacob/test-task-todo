@@ -1,5 +1,5 @@
-import { Todo } from '../../types/todo';
-import styles from './TodoItem.module.css';
+import { Todo } from "../../types/todo";
+import styles from "./TodoItem.module.css";
 
 interface TodoItemProps {
   todo: Todo;
@@ -8,7 +8,9 @@ interface TodoItemProps {
 
 export function TodoItem({ todo, onToggle }: TodoItemProps) {
   return (
-    <div className={`${styles.todoItem} ${todo.completed ? styles.completed : ''}`}>
+    <div
+      className={`${styles.todoItem} ${todo.completed ? styles.completed : ""}`}
+    >
       <input
         type="checkbox"
         className={styles.todoCheckbox}
@@ -18,4 +20,4 @@ export function TodoItem({ todo, onToggle }: TodoItemProps) {
       <span className={styles.todoText}>{todo.text}</span>
     </div>
   );
-} 
+}

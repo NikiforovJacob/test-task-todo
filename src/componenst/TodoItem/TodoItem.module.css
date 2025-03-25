@@ -17,7 +17,7 @@
 }
 
 .todoCheckbox::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
@@ -26,7 +26,7 @@
 }
 
 .todoCheckbox:checked::after {
-  content: '✓';
+  content: "✓";
   position: absolute;
   top: 8%;
   left: 25%;
@@ -52,4 +52,4 @@
 
 .completed .todoCheckbox::before {
   border-color: var(--color-checkbox-border);
-} 
+}

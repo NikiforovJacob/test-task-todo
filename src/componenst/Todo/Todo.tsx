@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
-import { Todo, TodoFilter } from '../../types/todo';
-import { TodoInput } from '../TodoInput';
-import { TodoList } from '../TodoList';
-import { TodoFooter } from '../TodoFooter';
-import styles from './Todo.module.css';
-import { getFromStorage, setToStorage } from '../../utils/localStorage';
+import { useState, useEffect } from "react";
+import { Todo, TodoFilter } from "../../types/todo";
+import { TodoInput } from "../TodoInput";
+import { TodoList } from "../TodoList";
+import { TodoFooter } from "../TodoFooter";
+import styles from "./Todo.module.css";
+import { getFromStorage, setToStorage } from "../../utils/localStorage";
 
-const STORAGE_KEY = 'todos-react-ts';
+const STORAGE_KEY = "todos-react-ts";
 
 export function TodoApp() {
   const [todos, setTodos] = useState<Todo[]>(getFromStorage(STORAGE_KEY) ?? []);
-  const [newTodo, setNewTodo] = useState('');
-  const [filter, setFilter] = useState<TodoFilter>('all');
+  const [newTodo, setNewTodo] = useState("");
+  const [filter, setFilter] = useState<TodoFilter>("all");
 
   useEffect(() => {
     setToStorage<Todo[]>(STORAGE_KEY, todos);
@@ -29,7 +29,7 @@ export function TodoApp() {
         completed: false,
       },
     ]);
-    setNewTodo('');
+    setNewTodo("");
   };
 
   const toggleTodo = (id: string) => {
@@ -41,8 +41,8 @@ export function TodoApp() {
   };
 
   const filteredTodos = todos.filter((todo) => {
-    if (filter === 'active') return !todo.completed;
-    if (filter === 'completed') return todo.completed;
+    if (filter === "active") return !todo.completed;
+    if (filter === "completed") return todo.completed;
     return true;
   });
 
@@ -71,4 +71,4 @@ export function TodoApp() {
       </div>
     </div>
   );
-} 
+}
