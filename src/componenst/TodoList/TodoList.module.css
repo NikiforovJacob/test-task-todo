@@ -1,0 +1,4 @@
+.todoList {
+  overflow-y: auto;
+  max-height: calc(100vh - 22rem);
+}

@@ -1,0 +1,51 @@
+.todoFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  font-weight: 300;
+}
+
+.todoCount {
+  color: var(--color-text-light);
+}
+
+.todoFilters {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.todoFilterButton {
+  border: 1px solid transparent;
+  background: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--color-text-light);
+  font-weight: 300;
+}
+
+.todoFilterButton:hover {
+  border-color: var(--color-button-border);
+}
+
+.todoFilterButton.selected {
+  border-color: var(--color-button-border);
+}
+
+.todoClearButton {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: var(--color-text-light);
+  font-weight: 300;
+}
+
+.todoClearButton:hover {
+  text-decoration: underline;
+} 

@@ -1,0 +1,24 @@
+.todoContainer {
+  max-width: 550px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.todoTitle {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 6rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.todoPaper {
+  background-color: var(--color-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03),
+              0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+} 

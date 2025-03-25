@@ -1,0 +1,55 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1rem 0.85rem 0.8rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.todoCheckbox {
+  margin-right: 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.todoCheckbox::before {
+  content: '';
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid var(--color-checkbox-border);
+  border-radius: 50%;
+}
+
+.todoCheckbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 8%;
+  left: 25%;
+  color: var(--color-checkbox);
+  font-size: 1.2rem;
+}
+
+.todoText {
+  flex-grow: 1;
+  color: var(--color-text);
+  font-weight: 300;
+  line-height: 1.2;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.completed .todoText {
+  color: var(--color-completed);
+  text-decoration: line-through;
+}
+
+.completed .todoCheckbox::before {
+  border-color: var(--color-checkbox-border);
+} 

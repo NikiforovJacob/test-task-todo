@@ -1,4 +1,5 @@
+import { TodoApp } from './componenst/Todo';
 
 export default function App() {
-  return <div>Hello World</div>;
+  return <TodoApp />;
 }
