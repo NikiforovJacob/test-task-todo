@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Todo, TodoFilter } from "../../types/todo";
 import { TodoInput } from "../TodoInput";
 import { TodoList } from "../TodoList";
@@ -40,13 +40,20 @@ export function TodoApp() {
     );
   };
 
-  const filteredTodos = todos.filter((todo) => {
-    if (filter === "active") return !todo.completed;
-    if (filter === "completed") return todo.completed;
-    return true;
-  });
+  const filteredTodos = useMemo(
+    () =>
+      todos.filter((todo) => {
+        if (filter === "active") return !todo.completed;
+        if (filter === "completed") return todo.completed;
+        return true;
+      }),
+    [filter, todos]
+  );
 
-  const itemsLeft = todos.filter((todo) => !todo.completed).length;
+  const itemsLeft = useMemo(
+    () => todos.filter((todo) => !todo.completed).length,
+    [todos]
+  );
 
   const clearCompleted = () => {
     setTodos(todos.filter((todo) => !todo.completed));
