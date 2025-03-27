@@ -3,10 +3,9 @@ import styles from "./TodoItem.module.css";
 
 interface TodoItemProps {
   todo: Todo;
-  onToggle: (id: string) => void;
 }
 
-export function TodoItem({ todo, onToggle }: TodoItemProps) {
+export function TodoItem({ todo }: TodoItemProps) {
   return (
     <div
       className={`${styles.todoItem} ${todo.completed ? styles.completed : ""}`}
@@ -14,8 +13,9 @@ export function TodoItem({ todo, onToggle }: TodoItemProps) {
       <input
         type="checkbox"
         className={styles.todoCheckbox}
-        checked={todo.completed}
-        onChange={() => onToggle(todo.id)}
+        defaultChecked={todo.completed}
+        id={todo.id}
+        data-todo-id={todo.id}
       />
       <span className={styles.todoText}>{todo.text}</span>
     </div>

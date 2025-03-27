@@ -8,10 +8,14 @@ interface TodoListProps {
 }
 
 export function TodoList({ todos, onToggle }: TodoListProps) {
+  const handleListItemOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onToggle(e.target.dataset.todoId as string);
+  };
+
   return (
-    <div className={styles.todoList}>
+    <div className={styles.todoList} onChange={handleListItemOnChange}>
       {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} onToggle={onToggle} />
+        <TodoItem key={todo.id} todo={todo} />
       ))}
     </div>
   );
